@@ -60,3 +60,24 @@ body {
   .prev:hover, .next:hover {
     background-color: rgba(247, 5, 5, 0.8);
   }
+
+ .slideshow-container {
+            position: relative;
+            max-width: 400px; /* Adjust based on your layout */
+            margin: auto;
+        }
+
+        /* Hide all images by default */
+        .mySlides {
+            display: none;
+        }
+
+        /* Add a fade transition effect */
+        .fade {
+            animation: fade 1.5s ease-in-out;
+        }
+
+        @keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+        }
